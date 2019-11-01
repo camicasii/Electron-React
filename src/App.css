@@ -1,0 +1,31 @@
+.header-logo{    
+  width: 100%;
+  height: 7rem;    
+  background: #159957; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #159957, #155799); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #159957, #155799); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+
+} 
+
+.logo-logo{ 
+width: 6rem;
+}
+
+.bg-combiner{
+  background-color: aqua;
+  padding: 1rem;
+  border-radius:  0.5rem;
+  
+}
+
+.myNav{
+ background: rgba(76,169,76,1);
+background: -moz-linear-gradient(left, rgba(76,169,76,1) 0%, rgba(11,127,107,0.93) 79%, rgba(11,127,11,0.91) 100%);
+background: -webkit-gradient(left top, right top, color-stop(0%, rgba(76,169,76,1)), color-stop(79%, rgba(11,127,107,0.93)), color-stop(100%, rgba(11,127,11,0.91)));
+background: -webkit-linear-gradient(left, rgba(76,169,76,1) 0%, rgba(11,127,107,0.93) 79%, rgba(11,127,11,0.91) 100%);
+background: -o-linear-gradient(left, rgba(76,169,76,1) 0%, rgba(11,127,107,0.93) 79%, rgba(11,127,11,0.91) 100%);
+background: -ms-linear-gradient(left, rgba(76,169,76,1) 0%, rgba(11,127,107,0.93) 79%, rgba(11,127,11,0.91) 100%);
+background: linear-gradient(to right, rgba(76,169,76,1) 0%, rgba(11,127,107,0.93) 79%, rgba(11,127,11,0.91) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4ca94c', endColorstr='#0b7f0b', GradientType=1 );
+}
