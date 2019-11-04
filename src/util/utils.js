@@ -24,7 +24,7 @@ const ticketsSerializer=(totalTicket,asing,selectArray = [],serial_ = [])=>{
             'SERIAL': Number(cod[i]),
             'SELL':false
         }
-        res.push(data)
+        return res.push(data)
     })
     return res
 }
@@ -78,11 +78,33 @@ const combinacion = (n,r)=>{
     const res = n_fact / (r_fact * rn_fact)    
     return res
 }
+const winner = (arrayData)=>{
+    const random_ = Math.random()* arrayData.length
+    return random_
+}
+const  ticketsRandomSerializer=(totalTicket,asing,lengthArray)=>{
+    let selectArray =[]
+    for(let i =0;i <= lengthArray;i++){
+        selectArray.push(i)
+    }
+
+    return new Promise((resolve, reject) => {
+     const a =ticketsSerializer(totalTicket,asing,selectArray)
+     if(a===null)
+     resolve(null)
+     resolve(a)
+
+})
+}
+
+
 
 module.exports ={
      ticketsSerializer2,
      combinacion,
-    factorial
+    factorial,
+    winner,
+    ticketsRandomSerializer
 }
 
 

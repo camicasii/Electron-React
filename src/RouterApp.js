@@ -15,6 +15,9 @@ class RouterApp extends Component {
         sellTickets:false
 
       }
+      componentWillMount(){
+        
+      }
 
 
     setArrAySelect=data=>{      
@@ -74,18 +77,17 @@ class RouterApp extends Component {
 
           <Router>
           <NavBar/>
-        
-          <Route exact path="/" render={(props)=><RawApp {...props} 
+            <Switch>
+            <Route exact  path="/" render={(props)=><RawApp {...props} 
               setArrAySelect={this.setArrAySelect}
               hola={this.hola}
               />} />
-            <Switch>
              
-              <Route exact path="/tickets"  render={(props)=><Tickets {...props}  tickets={this.state.arraySelect}
+              <Route  path="/tickets"  render={(props)=><Tickets {...props}  tickets={this.state.arraySelect}
                 handdleSell = {this.handdleSell}  
                 generateTickets ={this.state.generateTickets}                
                  />} />
-                <Route exact path="/sell"  render={(props)=><Sell {...props}  tickets={this.state.arraySelect}
+                <Route   path="/sell"  render={(props)=><Sell {...props}  tickets={this.state.arraySelect}
                 sell={this.state.arraySell}
                 sellTickets={this.state.sellTickets}
                 generateTickets ={this.state.generateTickets} 
